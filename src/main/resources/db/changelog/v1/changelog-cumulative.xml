@@ -13,7 +13,7 @@
         <sqlFile path="init.sql" relativeToChangelogFile="true" />
     </changeSet>
 
-    <changeSet id="create tables" author="Katerina" failOnError="true">
+    <changeSet id="fill tables" author="Katerina" failOnError="true">
         <sqlFile path="test-data.sql" relativeToChangelogFile="true" />
     </changeSet>
 
