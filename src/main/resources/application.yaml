@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:root}
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/digital_chief_db}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+  liquibase:
+    change-log: db/changelog/changelog-master.xml
+  application:
+    name: digital-chief-test-task
